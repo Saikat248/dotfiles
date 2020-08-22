@@ -1,0 +1,5 @@
+#!/bin/bash
+
+updates=$(/usr/lib/update-notifier/apt-check --human-readable | awk '{print $1}')
+
+echo $updates | grep '\s'
