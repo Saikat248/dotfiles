@@ -209,6 +209,9 @@ client.focused          #d64937 #d64937 #2D2D2D #2e9ef4
 client.focused_inactive #2d2d2d #2d2d2d #dcdcdc #484e50
 client.unfocused        #2D2D2D #2d2d2d #dcdcdc #292d2e
 
+
+
+
 #for_window [class="Eog"] floating enable
 for_window [class="Nemo"] floating enable
 for_window [class="Gnome-calculator"] floating enable

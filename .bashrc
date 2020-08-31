@@ -130,6 +130,7 @@ alias tamilnadu='ssh tamilnadu -X'
 alias yogesh-kangsavati='ssh yogesh@kangsavati -X'
 alias anoop-kangsavati='ssh anoop@kangsavati -X'
 alias souvik-kangsavati='ssh souvikr@kangsavati -X'
+alias paramshakti='ssh -p 4422 17cy91r04@paramshakti.iitkgp.ac.in -X'
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -274,10 +275,14 @@ alias .6='cd ../../../../..'
 
 
 # adding flags
-alias cp="cp -i"                          # confirm before overwriting something
-alias df='df -h'                          # human-readable sizes
-alias free='free -m'
+#alias cp="cp -i"                          # confirm before overwriting something
+alias df='df -h' # human-readable sizes
+alias du='du -h'
+alias free='free -h'
 
 alias tobash="sudo chsh $USER -s /bin/bash && echo 'Now log out.'"
 alias tozsh="sudo chsh $USER -s /bin/zsh && echo 'Now log out.'"
 alias config='/usr/bin/git --git-dir=/home/saikat/dotfiles/ --work-tree=/home/saikat'
+
+
+#alias copy='scp -P 4422 -o UserKnownHostsFile=/dev/null -r 17cy91r04@paramshakti.iitkgp.ac.in:/scratch/17cy91r04/'
