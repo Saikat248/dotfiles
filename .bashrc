@@ -177,7 +177,13 @@ export Multiwfnpath=/home/saikat/software/Multiwfn_3.6_bin_Linux
 export PATH=$PATH:/home/saikat/software/Multiwfn_3.6_bin_Linux
 
 
-XTBHOME=/home/saikat/software/xtb_6.2.3
+#XTBHOME=/home/saikat/software/xtb_6.2.3
+#XTBPATH=${XTBHOME}:${HOME}
+#MANPATH=${MANPATH}:${XTBHOME}/man
+#PATH=${PATH}:${XTBHOME}/bin:${XTBHOME}/scripts
+#export PATH XTBPATH MANPATH
+
+XTBHOME=/home/saikat/software/xtb-6.3.2
 XTBPATH=${XTBHOME}:${HOME}
 MANPATH=${MANPATH}:${XTBHOME}/man
 PATH=${PATH}:${XTBHOME}/bin:${XTBHOME}/scripts
@@ -222,7 +228,6 @@ alias v="nvim"
 
 ##
 #neofetch
-
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
@@ -286,3 +291,5 @@ alias config='/usr/bin/git --git-dir=/home/saikat/dotfiles/ --work-tree=/home/sa
 
 
 #alias copy='scp -P 4422 -o UserKnownHostsFile=/dev/null -r 17cy91r04@paramshakti.iitkgp.ac.in:/scratch/17cy91r04/'
+#fish shell
+#fish

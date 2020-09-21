@@ -176,7 +176,11 @@ bar {
         mode dock
 }
 
-exec_always feh --bg-scale /home/saikat/Pictures/wallpapers/0196.jpg
+##  Set automatic background
+#exec_always feh --bg-scale /home/saikat/Pictures/wallpapers/0196.jpg
+exec /home/saikat/.bin/scripts/update_background
+
+
 
 bindsym $mod+shift+x exec i3lock --image /home/saikat/Pictures/wallpaper.png
 
