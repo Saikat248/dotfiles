@@ -65,6 +65,7 @@ case $BLOCK_BUTTON in
 esac
 
 #------------------------------------------------------------------------
-
+#PUBLIC=$(curl -s https://ipinfo.io/ip)
 echo "$LABEL$IPADDR" # full text
 echo "$LABEL$IPADDR" # short text
+#echo "$PUBLIC"
