@@ -1,0 +1,30 @@
+#! /bin/bash
+
+# Status-bar configuration
+/home/saikat/.bin/dwm-bar/dwm_bar.sh &
+
+#Setting up font
+#xset +fp /home/mint/.local/share/fonts &
+#xset fp rehash &
+
+#Update background
+exec /home/saikat/.bin/scripts/update_background &
+#Dropbox
+exec /home/saikat/.dropbox-dist/dropboxd &
+
+#Resolution
+#xrandr --output Virtual1 --mode 1360x768 &
+
+#Compositor
+compton --config /home/saikat/.config/compton.conf &
+#compton -f &
+
+#Wallpaper
+#exec nitrogen --restore &
+
+#Next cloud
+exec /home/saikat/software/Nextcloud-2.6.5-x86_64.AppImage &
+
+#Execute Dwm
+exec dwm
+
