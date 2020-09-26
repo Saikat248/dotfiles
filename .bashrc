@@ -209,11 +209,11 @@ export PATH=/home/saikat/software/openbabel-2.4.1/build/bin:$PATH
 alias s=/usr/bin/swallow
 alias r=/usr/local/bin/ranger
 
-alias m="swallow molden"
-alias eog="swallow eog"
-alias evince="swallow evince"
-alias celluloid="swallow celluloid"
-alias shutdown="sudo shutdown -h now"
+#alias m="swallow molden"
+#alias eog="swallow eog"
+#alias evince="swallow evince"
+#alias celluloid="swallow celluloid"
+#alias shutdown="sudo shutdown -h now"
 alias v="nvim"
 
 ## Powerline setup for terminal
