@@ -28,6 +28,7 @@ export SEP2="]"
 . "$DIR/bar-functions/dwm_date.sh"
 . "$DIR/bar-functions/dwm_resources.sh"
 . "$DIR/bar-functions/dwm_disk.sh"
+. "$DIR/bar-functions/dwm_cputemp.sh"
 
 # Update dwm status bar every second
 while true
@@ -38,9 +39,10 @@ do
     dispstr="$dispstr$(dwm_weather)"
     dispstr="$dispstr$(dwm_networkmanager)"
     dispstr="$dispstr$(dwm_date)"
-    dispstr="$dispstr$(dwm_alsa)"
+    dispstr="$dispstr$(dwm_cputemp)"
     dispstr="$dispstr$(dwm_resources)"
     dispstr="$dispstr$(dwm_disk)"
+    dispstr="$dispstr$(dwm_alsa)"
     xsetroot -name "$dispstr"
     sleep 1
 

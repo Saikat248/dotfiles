@@ -13,13 +13,13 @@ dwm_networkmanager () {
     fi
 
     PRIVATE=$(nmcli -a | grep 'inet4 192' | awk '{print $2}')
-    PUBLIC=$(curl -s https://ipinfo.io/ip)
+#    PUBLIC=$(curl -s https://ipinfo.io/ip)
 
     printf "%s" "$SEP1"
     if [ "$IDENTIFIER" = "" ]; then
-        printf " %s | %s"  "$PRIVATE" "$PUBLIC"
+        printf " %s"  "$PRIVATE" #  "$PUBLIC"
     else
-        printf "  %s | %s"  "$PRIVATE" "$PUBLIC"
+        printf "  %s"  "$PRIVATE" # "$PUBLIC"
     fi
     printf "%s\n" "$SEP2"
 }
