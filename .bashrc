@@ -155,6 +155,8 @@ export PATH=/home/saikat/software/openmpi/bin:$PATH
 export EDITOR=nvim
 export PATH=/home/saikat/software:$PATH
 export PATH=/home/saikat/software/molden:$PATH
+alias molden="setsid molden &>/dev/null"
+alias kmol="killall molden"
 
 g16root=/home/saikat/software
 export g16root
@@ -288,8 +290,6 @@ alias free='free -h'
 alias tobash="sudo chsh $USER -s /bin/bash && echo 'Now log out.'"
 alias tozsh="sudo chsh $USER -s /bin/zsh && echo 'Now log out.'"
 alias config='/usr/bin/git --git-dir=/home/saikat/dotfiles/ --work-tree=/home/saikat'
+source $HOME/.cargo/env
 
 
-#alias copy='scp -P 4422 -o UserKnownHostsFile=/dev/null -r 17cy91r04@paramshakti.iitkgp.ac.in:/scratch/17cy91r04/'
-#fish shell
-#fish

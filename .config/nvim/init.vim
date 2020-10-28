@@ -42,5 +42,5 @@ set guicursor=
 set termguicolors
 
 "map :t :terminal
-map <F5> <Esc>:w<CR>:!clear;python3 %<CR>
-
+"map <F5> <Esc>:w<CR>:!clear;python3 %<CR>
+map <F5> <Esc>:w<CR>:!python3 %<CR>

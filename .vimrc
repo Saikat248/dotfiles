@@ -33,6 +33,7 @@ inoremap {<CR> {<CR>}<ESC>O
 inoremap {;<CR> {<CR>};<ESC>O
 map <F5> <Esc>:w<CR>:!clear;python3 %<CR>
 
+
 execute pathogen#infect()
 
 filetype plugin indent on
