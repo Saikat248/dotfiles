@@ -1,0 +1,1 @@
+/home/saikat/.config/nvim/init.vim
